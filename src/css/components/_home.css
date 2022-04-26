@@ -1,5 +1,5 @@
 
-.section-home {
+.main-home {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.section-home .poster {
+.main-home .section-poster {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -16,26 +16,45 @@
     align-items: center;
 }
 
-.section-home .poster-content {
+.main-home .poster-content {
     width: 50%;
     height: 100%;
 }
 
-.section-home .poster-content h1 {
+.main-home .poster-content h1 {
     font-size: 4rem;
-    color: #fff;
+    color: var(--text-color);
+    padding-right: 30px;
+    font-weight: 700;
 }
 
-.section-home .poster-content p {
+.main-home .poster-content p {
     font-size: 1.2rem;
-    color: rgb(184, 157, 157);
+    color: var(--color-secondary);
+    margin-top: -12px;
+    font-weight: 300;
 }
 
-.section-home .poster-content .btn-join {
+.main-home .poster-content .btn-join {
     display: inline-block;
     font-size: 1.1rem;
-    padding: 10px 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-top: 12px;
+    padding: 8px 16px;
     border-radius: 5px;
+    border: 1px solid var(--color-secondary);
     transition: 0.5s ease;
+}
+
+.main-home .poster-content .btn-join:hover {
+    background-color: var(--bg-hover);
+    color: var(--color-secondary);
+    border: none;
+}
+
+.main-home .section-poster .img-person {
+    width: 35%;
+    margin-left: -150px;
 }
 
