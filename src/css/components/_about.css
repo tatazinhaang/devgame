@@ -26,7 +26,7 @@
     font-weight: 300;
 }
 
-.section-about .about-content .btn-letsgo {
+.section-about .about-content .btn-letsGo {
     display: inline-block;
     font-size: 1.1rem;
     font-weight: 400;
@@ -35,6 +35,7 @@
     padding: 8px 16px;
     border-radius: 5px;
     border: 1px solid var(--color-secondary);
+    cursor: pointer;
     transition: 0.5s ease;
 }
 

@@ -4,12 +4,25 @@
     --bg-color: #111;
     --bg-secondary: #555555;
     --bg-hover: #363535;
-    --text-color: #fff;
     --color-secondary: #b89d9d;
+    --text-color: #fff;
+    --text-secondary: #fff0f0;;
+  
+   
 }
 
 
 body {
     background-color: #111;
     font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bg-secondary);
+    border-radius: 3px;
 }
