@@ -13,6 +13,7 @@
     color: var(--text-color);
     margin: 15px 0;
     font-size: 2rem;
+    text-transform: uppercase;
 }
 
 .section-games .games-content {
@@ -31,6 +32,11 @@
     margin: 20px 40px;
     background-color: var(--bg-secondary);
     overflow: hidden;
+    transition: all 0.5s;
+}
+
+.section-games .games-content .cardGames:hover {
+  transform: translateY(-10px);
 }
 
 .section-games .games-content .cardGames img {

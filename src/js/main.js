@@ -1,14 +1,3 @@
-function typeWrite(element) {
-    const textoArray = element.innerHTML.split('');
-    element.innerHTML = '';
-    textoArray.forEach((letra, i) => {
-        setTimeout(() => {
-            element.innerHTML += letra;
-        }, 80 * i)
-    });
-}
-typeWrite(document.querySelector('.h1-name'));
-
 
 const debounce = function(fun, wait, immediate) {
     let timeout;
@@ -49,4 +38,3 @@ if(target.length) {
         animeScroll();
     }, 50);
 }
-
