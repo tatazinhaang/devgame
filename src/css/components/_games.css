@@ -15,29 +15,6 @@
     font-size: 2rem;
 }
 
-.section-games ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.section-games ul .card-list {
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 5px;
-    color: var(--text-color);
-    cursor: pointer;
-    transition: 0.5s ease;
-}
-
-.section-games ul .card-list:hover {
-    background-color: var(--bg-hover);
-    color: var(--color-secondary);
-    box-shadow: 0 0 5px var(--bg-secondary);
-}
-
 .section-games .games-content {
     width: 100%;
     min-height: 100%;
@@ -105,3 +82,28 @@
     
 }
 
+[data-anime] {
+    opacity: 0;
+    transition: .8s;
+  }
+  
+  [data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+  }
+  
+  [data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+  }
+  
+  [data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
+  }
+    
+  [data-anime="bottom"] {
+    transform: translate3d(0, 50px, 0);
+  }
+  
+  [data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
