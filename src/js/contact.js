@@ -17,15 +17,17 @@ function ValidateField(field) {
     function customMessage(typeError) {
         const messages = {
             text: {
-                valueMissing: "Required field"
+                valueMissing: "Fill in the field"
             },
             email: {
                 valueMissing: "Required email",
                 typeMismatch: "Fill in a valid email"
             }
+           
         }
-
+    
         return messages[field.type][typeError];
+        
     }
 
     function setCustomMessage(message) {
@@ -54,7 +56,7 @@ function ValidateField(field) {
 }
 
 
-function formValidation(event) {
+function customValidation(event) {
 
     const field = event.target
     const validation = ValidateField(field);
@@ -69,7 +71,7 @@ for( field of fields ){
 
         customValidation(event);
     })
-    field.addEventListener("blur", formValidation);
+    field.addEventListener("blur", customValidation);
 }
 
 
