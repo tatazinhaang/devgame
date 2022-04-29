@@ -12,36 +12,33 @@
         <a href="#" class="logo">DevGame</a>
         <ul class="menu">
             <li>
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
             </li>
             <li>
-                <a href="#">About</a>
+                <a href="#about">About</a>
             </li>
             <li>
-                <a href="#">Games</a>
+                <a href="#games">Games</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
-            <div class="menuResponsive"></div>
         </ul>
+        <div class="menuResponsive"></div>
     </header>
 
-    <main class="main-home">
+    <main class="main-home" id="home">
         <section class="section-poster" >
             <div class="poster-content" >
                 <h1 class="h1-name">Welcome to the adventures of Game World!</h1>
                 <p>The right place for those who love games.</p>
                 <a  href="#" class="btn-join">Join Now</a>
-            </div>
-           
-             <img class="img-person" src="src/imagens/personagem.png" alt="Personagem">
-             <img class="img-person" src="src/imagens/personagem2-.png" alt="Personagem">
-           
+            </div> 
+            <img class="img-person" src="src/imagens/personagem2-.png" alt="Personagem">
         </section>
     </main>
 
-    <section class="section-about">
+    <section class="section-about" id="about">
         <div class="about-content" data-anime="top">
             <h2>About us Devgamers</h2>
             <p>An environment made for developers and gamers. If you are a dev gamer or if you know the world of games, this is your place.
@@ -52,7 +49,7 @@
         <img src="src/imagens/videogame.png" alt="Videogame" class="img-videogame" data-anime="top">
     </section>
 
-    <section class="section-games">
+    <section class="section-games" id="games">
         <h2>Games Section</h2>
         <div class="games-content">
             <div class="cardGames">
@@ -135,7 +132,7 @@
             </div>
         </section>
 
-        <div class="contact">
+        <div class="contact" id="contact">
             <img src="src/imagens/kratos.png" alt="Kratos">
             <div class="forms">
                 <h2>Contact</h2>
@@ -159,9 +156,28 @@
                 </div>
             </div>
         </div>
-       
+        <footer>
+            <div class="footer-info">
+                <a href="#" class="logo">DevGame</a>
+                <p>Desenvolvido por: Front Arretado Team
+                    <i class="fa-regular fa-copyright"></i>
+                </p>
+
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-github"></i></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+
         <script src="src/js/text.js"></script>
         <script src="src/js/main.js"></script>
         <script src="src/js/contact.js"></script>
+        <script src="src/js/menu.js"></script>
+        
+        <script src="https://kit.fontawesome.com/b4ee247f04.js" crossorigin="anonymous"></script>
+
     </body>
 </html>

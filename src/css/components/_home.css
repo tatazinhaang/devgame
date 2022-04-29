@@ -24,14 +24,17 @@
 .main-home .poster-content h1 {
     font-size: 4rem;
     color: var(--text-color);
+    margin-left: -50px;
     padding-right: 30px;
     font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.5s;
 }
 
 .main-home .poster-content p {
     font-size: 1.2rem;
     color: var(--color-secondary);
-    margin-top: -12px;
+    margin: -12px 0 0 -50px;
     font-weight: 300;
 }
 
@@ -40,7 +43,7 @@
     font-size: 1.1rem;
     font-weight: 400;
     color: var(--text-color);
-    margin-top: 12px;
+    margin: 12px 0 0 -50px;
     padding: 8px 16px;
     border-radius: 5px;
     border: 1px solid var(--color-secondary);
@@ -55,13 +58,13 @@
 }
 
 .main-home .section-poster .img-person {
-  width: 35%;
-  margin-left: -180px;
-  transition: all 0.5s;
+    height: 70%;
+    margin-left: -120px;
+    transition: all 0.5s;
 }
 
 .main-home .section-poster .img-person:hover {
-  transform: translateY(-10px);
+  transform: translateX(-10px);
 }
     
    

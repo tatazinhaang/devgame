@@ -9,3 +9,4 @@ function typeWrite(element) {
 }
 typeWrite(document.querySelector('.h1-name'));
 
+

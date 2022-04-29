@@ -1,0 +1,52 @@
+footer {
+    padding: 10px 30px;
+    background-color: var(--bg-secondary)
+   
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info .logo {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.footer-info p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    
+}
+
+.footer-info ul {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-info ul li {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.footer-info ul li:hover {
+    background-color: var(--bg-hover);
+    
+}
+
+.footer-info ul li a i {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
