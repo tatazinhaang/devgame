@@ -141,23 +141,27 @@
                 <h2>Contact</h2>
                 <div class="contact-input">
                     <p>Enter your name</p>
-                    <input type="text" placeholder="Full Name">
+                    <input required type="text" placeholder="Full Name">
+                    <span class="error"></span>
                 </div>
                 <div class="contact-input">
                     <p>Enter your email</p>
-                    <input type="text" placeholder="Email">
+                    <input required type="text" placeholder="Email">
+                    <span class="error"></span>
                 </div>
                 <div class="contact-input">
-                    <p>Leave your message</p>
-                    <textarea placeholder="Message..."></textarea>
+                    <p>Enter your phone</p>
+                    <input required type="text" placeholder="Phone">
+                    <span class="error"></span>
                 </div>
                 <div class="contact-input">
-                    <input type="submit" name ="Submit" value ="Submit">
+                   <button type="submit" id="submit">Submit</button>
                 </div>
             </div>
         </div>
        
         <script src="src/js/text.js"></script>
         <script src="src/js/main.js"></script>
+        <script src="src/js/contact.js"></script>
     </body>
 </html>

@@ -1,3 +1,4 @@
+// Funções de animação da página(Animando scroll)
 
 const debounce = function(fun, wait, immediate) {
     let timeout;
@@ -38,3 +39,4 @@ if(target.length) {
         animeScroll();
     }, 50);
 }
+
