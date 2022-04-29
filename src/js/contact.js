@@ -46,11 +46,8 @@ function ValidateField(field) {
 
         if(error) {
             const message = customMessage(error);
-
-            field.style.borderColor = "red";
             setCustomMessage(message);
         } else {
-            field.style.borderColor = "green";
             setCustomMessage();
         }
     }
@@ -80,4 +77,5 @@ document.querySelector("forms")
 .addEventListener("submit", event => {
 
     event.preventDefault();
-})
+});
+
