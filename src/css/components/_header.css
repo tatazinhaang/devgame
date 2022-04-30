@@ -18,19 +18,22 @@
    font-size: 1.4rem;
    font-weight: 700;
    letter-spacing: 2px;
+   margin-left: 5%;
 }
 
 .header .menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 50%;
 }
 
-.header ul li {
-    margin: 8px;
+.header .menu li {
+    margin-left: 8px;
+
 }
 
-.header ul li a {
+.header .menu li a {
     color: var(--text-color);
     font-size: 1.1rem;
     padding: 10px 16px;
@@ -38,7 +41,7 @@
     transition: 0.5s ease;
 }
 
-.header ul li a:hover {
+.header .menu li a:hover {
     background-color: var(--bg-hover);
     color: var(--color-secondary);
     box-shadow: 0 0 10px var(--bg-secondary);
