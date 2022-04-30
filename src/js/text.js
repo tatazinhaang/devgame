@@ -1,3 +1,5 @@
+// Animação - Efeito escrever
+
 function typeWrite(element) {
     const textoArray = element.innerHTML.split('');
     element.innerHTML = '';

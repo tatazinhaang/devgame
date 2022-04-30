@@ -185,3 +185,127 @@
     
 
 }
+
+@media(max-width: 320px) {
+    .header {
+        padding: 15px 40px;
+        width: 100vw;
+        
+    }
+
+    .header .menu {
+        display: none;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        right: 0;
+        bottom: 0;
+        background-color: var(--bg-secondary);
+        transition: 0.5s;
+        z-index: 1000;
+    }
+
+    .header .menu.active {
+        display: flex;
+        margin-top: -270px;
+    }
+
+    .header .menu li {
+        margin: 35px 0 0 190px;    
+    }
+
+    .header .menu li a {
+        font-size: 1.4rem;
+        margin: 0 0 0 -120px;
+    }
+
+    .header .logo {
+        font-size: 1.2rem;
+    }
+
+    .main-home .poster-content {
+      width: 100vw;
+      height: 170px;
+    }
+
+    .main-home .section-poster h1 {
+        font-size: 12px;
+        margin: -12px 0 0 2px;
+        line-height: 22px;
+    }
+
+    .main-home .section-poster p {
+        font-size: 8px;
+        margin: 1px 0 8px;
+        font-weight: 700;
+    }
+
+    .main-home .poster-content .btn-join {
+        width: 70px;
+        font-size: 0.6rem;
+        margin: 1px  8px;
+    }
+
+    .main-home .section-poster .img-person {
+        height: 50%;
+        margin-left: 30px;
+    }
+
+    .section-about .about-content h2 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        
+    }
+
+    .section-about .about-content p {
+        font-size: 0.8rem;
+        text-align: justify;
+        margin-left: -10px;
+    }
+
+    .section-about .about-content .btn-letsGo {
+        width: 70px;
+        font-size: 0.6rem;
+        margin: 5px 0 0 10px;
+    }
+
+    .img-videogame {
+        width: 50vw;
+    }
+
+    .section-games h2 {
+        font-size: 1.3rem;
+    }
+    
+    .section-games .games-content {
+        width: 300px;
+    }
+
+    .contact img {
+        height: 40vh;
+        width: 250px;
+        transition: all 0.5s;
+    }
+
+   .contact .forms {
+    width: 95vw;
+    
+    }
+
+   .contact .forms h2 {
+       font-size: 1.3rem;
+   }
+
+   .contact .forms button {
+    width: 75px;
+    font-size: 0.7rem;
+   }
+
+   .footer-info p {
+    font-size: 0.7rem
+}
+
+}
