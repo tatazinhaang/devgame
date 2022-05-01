@@ -143,7 +143,7 @@
 
 @media(max-width: 480px) {
     .header{
-        width: 10vw;
+        width: 100vw;
         margin-left: -20px;
     }
 
@@ -252,7 +252,7 @@
 @media(max-width: 1279px) {
     .header  {
         padding: 15px;
-        width: 100vw;
+        width: 100%;
     }
 
     .header .logo {
@@ -269,6 +269,7 @@
 
     .header .menu li a {
         font-size: 1.5rem;
+       
     }
 
     .main-home .poster-content {
@@ -298,8 +299,8 @@
     }
 
     .main-home .section-poster .img-person {
-        width: 60vw;
-        height: 50vh;
+        width: 80vw;
+        height: 90vh;
         margin-left: 12%;
     }
 
