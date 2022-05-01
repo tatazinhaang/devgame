@@ -134,47 +134,84 @@
 
 
 @media(max-width: 480px) {
+    .header{
+        width: 95%;
+        margin-left: -20px;
+    }
+
+    .header .menu{
+        left: -250px;
+    }
+
+    .header .menu li a {
+        font-size: 1.6rem;
+        margin: 0 0 0 55px;
+    }
+
     .main-home .poster-content {
        margin-left: -90px;
-       height: 45vh;   
+       height: 30%; 
+       width: 75vw;  
     }
 
     .main-home .section-poster .img-person {
-        margin-left: 90px;
-        height: 70%;
+        margin-left: 20px;
+        height: 55%;
     }
 
     .main-home .section-poster h1 {
-        font-size: 1.3rem;
-        margin-top: 35px;
+        font-size: 1.2rem;
+        margin-top: 20px;
         line-height: 30px;
     }
 
     .main-home .section-poster p {
-        font-size: 0.5rem;
+        font-size: 0.9rem;
     }
 
     .main-home .poster-content .btn-join {
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         padding: 6px 10px;
     }
 
+    .section-about .about-content h2 {
+        font-size: 2rem;
+        margin: 50px 0 0 25px;
+        width: 60vw; 
+    }
+
+    .section-about .about-content p {
+        font-size: 1.2rem;
+        text-align: justify;
+        margin: 20px 0 0 -55px;
+        width: 70vw;
+    }
+
+    .section-about .about-content .btn-letsGo {
+        width: 20vw;
+        font-size: 1rem;
+        margin: 10px 0 0 -55px;
+    }
+
     .img-videogame {
-        width: 100%;
+       display: none;
+
     }
 
     .section-games .games-content {
         width: 80vw;
+        margin-left: -35px;
     }
 
     .contact img {
-        height: 70vh;
-        width: 50vw;
+        height: 100%;
+        width: 75vw;
+        margin: 0 0 20px -10px;
     }
 
     .contact .forms {
-        width: 90vw;
-        margin: 30px;
+        width: 80vw;
+        margin: 0 0 0 -30px;
         padding: 10px;
     }   
    
@@ -182,30 +219,35 @@
         width: 85px;
         font-size: 0.9rem;
     }
-    
 
+    footer {
+        width: 95vw;
+    }
+
+    .footer-info .logo {
+        font-size: 1.8rem;
+        margin-left: 40px;
+    }
+    
+    .footer-info p {
+        font-size: 0.9rem;
+        margin: 2px 100px 0 0;
+        width: 80vw;
+    }
+
+    .footer-info ul {
+        margin: -2px 0 0 60px;
+    }
 }
 
 @media(max-width: 320px) {
     .header {
         padding: 15px 40px;
-        width: 100vw;
-        
+        width: 100vw;     
     }
 
     .header .menu {
-        display: none;
-        justify-content:center;
-        align-items:center;
-        flex-direction:column;
-        position: fixed;
-        top: 0;
-        left: -250px;
-        right: 0;
-        bottom: 0;
-        background-color: var(--bg-secondary);
-        transition: 0.5s;
-        z-index: 1000;
+         left: -200px;
     }
 
     .header .menu.active {
@@ -227,26 +269,27 @@
     }
 
     .main-home .poster-content {
-      width: 100vw;
-      height: 170px;
+      width: 60vw;
+      height: 180px;
     }
 
     .main-home .section-poster h1 {
-        font-size: 12px;
-        margin: -12px 0 0 2px;
-        line-height: 22px;
+        font-size: 15px;
+        margin: 4px 0 0 -12px;
+        line-height:20px;
+        width: 60vw;
     }
 
     .main-home .section-poster p {
-        font-size: 8px;
-        margin: 1px 0 8px;
+        font-size: 7px;
+        margin: 2px 0 0 -10px;
         font-weight: 700;
     }
 
     .main-home .poster-content .btn-join {
-        width: 70px;
+        width: 23vw;
         font-size: 0.6rem;
-        margin: 1px  8px;
+        margin: 10px 0 0 -10px;
     }
 
     .main-home .section-poster .img-person {
@@ -255,57 +298,205 @@
     }
 
     .section-about .about-content h2 {
-        font-size: 1.1rem;
-        margin-bottom: 10px;
-        
+        font-size: 1.3rem;
+        margin-left: -20px;
+        width: 50vw; 
     }
 
     .section-about .about-content p {
-        font-size: 0.8rem;
+        font-size: 14px;
         text-align: justify;
-        margin-left: -10px;
+        margin: 10px 0 0 -60px;
+        width: 70vw;
     }
 
     .section-about .about-content .btn-letsGo {
-        width: 70px;
+        width: 25vw;
         font-size: 0.6rem;
-        margin: 5px 0 0 10px;
+        margin: 10px 0 0 -60px;
     }
 
-    .img-videogame {
-        width: 50vw;
+    .img-videogame  {
+      display: none;
+       
     }
 
     .section-games h2 {
         font-size: 1.3rem;
-    }
-    
-    .section-games .games-content {
-        width: 300px;
+        width: 50vw;
     }
 
+    .section-games .games-content {
+        width: 100vw;
+    }
+    
     .contact img {
         height: 40vh;
-        width: 250px;
+        width: 230px;
         transition: all 0.5s;
     }
 
    .contact .forms {
-    width: 95vw;
-    
+        width: 95vw;
     }
 
    .contact .forms h2 {
-       font-size: 1.3rem;
+       font-size: 1.2rem;
    }
 
    .contact .forms button {
-    width: 75px;
-    font-size: 0.7rem;
+        width: 75px;
+        font-size: 0.7rem;
    }
 
    .footer-info p {
-    font-size: 0.7rem
+        font-size: 0.7rem;
+        width: 100vw;
+    }
+
 }
 
+@media(max-width: 1279px) {
+    .header  {
+        padding: 20px;
+    }
+
+    .header .logo {
+        font-size: 2.5rem;
+        margin-left: 15px;
+    }
+
+    .header .menu {
+        margin-left: -25%;
+    }
+
+    .header .menu li {
+        margin: 10px;
+    }
+
+    .header .menu li a {
+        font-size: 1.5rem;
+    }
+
+    .main-home .poster-content h1 {
+        font-size: 3.5rem;
+        width: 60vw;
+        margin-left: 20px;
+    }
+
+    .main-home .poster-content p {
+        font-size: 1.5rem;
+        margin: 10px 0 0 20px;
+        width: 60vw;
+    }
+
+    .main-home .poster-content .btn-join {
+        font-size: 2rem;
+        width: 22vw;
+        padding: 20px;
+        margin: 15px 0 0 20px;
+        text-align: center;
+    }
+
+    .main-home .section-poster .img-person {
+        width: 60vw;
+        height: 40vh;
+        margin-right: 15%;
+    }
+
+    .section-about {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .section-about .about-content {
+        width: 100vw;
+    }
+
+    .section-about .about-content h2 {
+        font-size: 3.5rem;
+        margin-right: 20%;
+        text-align: center;
+    }
+
+    .section-about .about-content p {
+        font-size: 2.5rem;
+        width: 60vw;
+        margin: 15px 0 0 200px;
+        
+    }
+
+    .section-about .about-content .btn-letsGo {
+        font-size: 2.5rem;
+        width: 20vw;
+        padding: 20px;
+        margin: 20px 0 0 200px;
+        text-align: center;
+    }
+
+    .img-videogame {
+        width: 50%;
+        height: 30vh;
+        margin-right: 25%;
+      
+    }
+    
+    .section-games h2 {
+        font-size: 3.5rem;
+        margin-right: 20%;
+        text-align: center;
+    }
+
+    .section-games .games-content {
+        width: 100vw;
+        margin-right: 20%;
+    }
+
+    .section-games .games-content .cardGames {
+        width: 250px;
+        
+        
+       
+    }
+        
+    .contact {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact img {
+        width: 50vw;
+        margin-right: 20%;
+    }
+
+    .contact .forms {
+        width: 60vw;
+        margin-right: 30%;
+       
+    }
+
+    .contact .forms h2 {
+        font-size: 4rem;
+        margin-right: 10%;
+    }
+
+    .contact .forms .contact-input p {
+        font-size: 1.8rem;
+    }
+       
+    .footer-info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer-info ul {
+        margin-right: 20%;
+    }
+
+    .footer-info p {
+        margin-left: 200px;
+    }
 }

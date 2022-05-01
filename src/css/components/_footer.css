@@ -1,7 +1,7 @@
 footer {
     padding: 10px 30px;
-    background-color: var(--bg-secondary)
-   
+    background-color: var(--bg-secondary);
+    
 }
 
 .footer-info {
@@ -20,6 +20,7 @@ footer {
 .footer-info p {
     color: var(--text-color);
     font-size: 0.9rem;
+    margin-left: 100px;
     
 }
 
