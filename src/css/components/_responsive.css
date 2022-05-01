@@ -10,16 +10,18 @@
         flex-direction:column;
         position: fixed;
         top: 0;
-        left: 0;
+        left: -370px;
         right: 0;
         bottom: 0;
         background-color: var(--bg-secondary);
         transition: 0.5s;
         z-index: 1000;
+
     }
 
     .header .menu.active {
         display: flex;
+       
     }
 
     .header .menu li {
@@ -109,9 +111,14 @@
         width: 100px;
         font-size: 0.9rem;
     }
+
+    .footer {
+        width: 100vw;
+    }
     
     .footer-info  {
        flex-direction: column;
+       margin-left: 50px;
     }
 
     .footer-info .logo {
@@ -120,22 +127,23 @@
     }
 
     .footer-info p {
-        font-size: 0.8rem
+        font-size: 0.8rem;
+        margin-right: 220px;
     }
 
     .footer-info ul {
-        margin: -10px 0;
+        margin: -10px 0 0 100px;
     }
 
     .footer-info ul li {
-        width: 34px;
+        margin: 5px 0 0 0;
     }
 }
 
 
 @media(max-width: 480px) {
     .header{
-        width: 95%;
+        width: 10vw;
         margin-left: -20px;
     }
 
@@ -240,168 +248,59 @@
     }
 }
 
-@media(max-width: 320px) {
-    .header {
-        padding: 15px 40px;
-        width: 100vw;     
-    }
 
-    .header .menu {
-         left: -200px;
-    }
-
-    .header .menu.active {
-        display: flex;
-        margin-top: -270px;
-    }
-
-    .header .menu li {
-        margin: 35px 0 0 190px;    
-    }
-
-    .header .menu li a {
-        font-size: 1.4rem;
-        margin: 0 0 0 -120px;
+@media(max-width: 1279px) {
+    .header  {
+        padding: 15px;
+        width: 100vw;
     }
 
     .header .logo {
         font-size: 1.2rem;
+        margin-left: 20px;
     }
-
-    .main-home .poster-content {
-      width: 60vw;
-      height: 180px;
-    }
-
-    .main-home .section-poster h1 {
-        font-size: 15px;
-        margin: 4px 0 0 -12px;
-        line-height:20px;
-        width: 60vw;
-    }
-
-    .main-home .section-poster p {
-        font-size: 7px;
-        margin: 2px 0 0 -10px;
-        font-weight: 700;
-    }
-
-    .main-home .poster-content .btn-join {
-        width: 23vw;
-        font-size: 0.6rem;
-        margin: 10px 0 0 -10px;
-    }
-
-    .main-home .section-poster .img-person {
-        height: 50%;
-        margin-left: 30px;
-    }
-
-    .section-about .about-content h2 {
-        font-size: 1.3rem;
-        margin-left: -20px;
-        width: 50vw; 
-    }
-
-    .section-about .about-content p {
-        font-size: 14px;
-        text-align: justify;
-        margin: 10px 0 0 -60px;
-        width: 70vw;
-    }
-
-    .section-about .about-content .btn-letsGo {
-        width: 25vw;
-        font-size: 0.6rem;
-        margin: 10px 0 0 -60px;
-    }
-
-    .img-videogame  {
-      display: none;
-       
-    }
-
-    .section-games h2 {
-        font-size: 1.3rem;
-        width: 50vw;
-    }
-
-    .section-games .games-content {
-        width: 100vw;
-    }
-    
-    .contact img {
-        height: 40vh;
-        width: 230px;
-        transition: all 0.5s;
-    }
-
-   .contact .forms {
-        width: 95vw;
-    }
-
-   .contact .forms h2 {
-       font-size: 1.2rem;
-   }
-
-   .contact .forms button {
-        width: 75px;
-        font-size: 0.7rem;
-   }
-
-   .footer-info p {
-        font-size: 0.7rem;
-        width: 100vw;
-    }
-
-}
-
-@media(max-width: 1279px) {
-    .header  {
-        padding: 20px;
-    }
-
-    .header .logo {
-        font-size: 2.5rem;
-        margin-left: 15px;
-    }
-
     .header .menu {
-        margin-left: -25%;
+        margin-top: -300px;
     }
 
     .header .menu li {
-        margin: 10px;
+        margin: 40px 0 0 20px;
     }
 
     .header .menu li a {
         font-size: 1.5rem;
     }
 
+    .main-home .poster-content {
+        height: 35vh;
+        width: 65vw;
+        
+    }
+
     .main-home .poster-content h1 {
-        font-size: 3.5rem;
+        font-size: 1.2rem;
         width: 60vw;
-        margin-left: 20px;
+        margin: 2px 0 0 5px;
     }
 
     .main-home .poster-content p {
-        font-size: 1.5rem;
-        margin: 10px 0 0 20px;
-        width: 60vw;
+        font-size: 0.9rem;
+        margin: 10px 0 0 2px;
+        width: 55vw;
     }
 
     .main-home .poster-content .btn-join {
-        font-size: 2rem;
-        width: 22vw;
-        padding: 20px;
-        margin: 15px 0 0 20px;
+        font-size: 0.9rem;
+        width: 25vw;
+        padding: 5px;
+        margin: 15px 0 0 5px;
         text-align: center;
     }
 
     .main-home .section-poster .img-person {
         width: 60vw;
-        height: 40vh;
-        margin-right: 15%;
+        height: 50vh;
+        margin-left: 12%;
     }
 
     .section-about {
@@ -415,48 +314,42 @@
     }
 
     .section-about .about-content h2 {
-        font-size: 3.5rem;
-        margin-right: 20%;
-        text-align: center;
+        font-size: 1.5rem;
+        margin-left: 70px;
     }
 
     .section-about .about-content p {
-        font-size: 2.5rem;
+        font-size: 1rem;
         width: 60vw;
-        margin: 15px 0 0 200px;
+        margin: 15px 0 0 50px;
         
     }
 
     .section-about .about-content .btn-letsGo {
-        font-size: 2.5rem;
-        width: 20vw;
-        padding: 20px;
-        margin: 20px 0 0 200px;
-        text-align: center;
+        font-size: 1rem;
+        width: 25vw;
+        padding: 12px;
+        margin: 20px 0 0 50px;
     }
 
     .img-videogame {
-        width: 50%;
-        height: 30vh;
-        margin-right: 25%;
+       display: none;  
       
     }
     
     .section-games h2 {
-        font-size: 3.5rem;
-        margin-right: 20%;
-        text-align: center;
+        font-size: 1.5rem;
+        width: 60vw;
+        margin-left: -20px;
     }
 
     .section-games .games-content {
         width: 100vw;
-        margin-right: 20%;
+       
     }
 
     .section-games .games-content .cardGames {
-        width: 250px;
-        
-        
+        width: 220px;
        
     }
         
@@ -467,23 +360,23 @@
     }
 
     .contact img {
-        width: 50vw;
-        margin-right: 20%;
+        height: 40vh;
+       margin-right: 15%;
     }
 
     .contact .forms {
-        width: 60vw;
-        margin-right: 30%;
+        width: 90vw;
+        margin-right: 2%;
        
     }
 
     .contact .forms h2 {
-        font-size: 4rem;
+        font-size: 1.5rem;
         margin-right: 10%;
     }
 
     .contact .forms .contact-input p {
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
        
     .footer-info {
@@ -492,11 +385,17 @@
         align-items: center;
     }
 
+    .footer-info .logo {
+        font-size: 1.5rem;
+        margin-right: 50px;
+    }
+
     .footer-info ul {
         margin-right: 20%;
     }
 
     .footer-info p {
-        margin-left: 200px;
+        margin-left: 150px;
+        font-size: 0.7rem;
     }
 }
