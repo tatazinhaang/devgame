@@ -75,7 +75,7 @@ for( field of fields ){
 }
 
 
-document.querySelector("forms")
+document.querySelector("form")
 .addEventListener("submit", event => {
 
     event.preventDefault();
