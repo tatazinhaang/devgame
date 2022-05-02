@@ -252,7 +252,7 @@
 @media(max-width: 1279px) {
     .header  {
         padding: 15px;
-        width: 100%;
+        width: 97%;
     }
 
     .header .logo {
@@ -299,9 +299,9 @@
     }
 
     .main-home .section-poster .img-person {
-        width: 80vw;
-        height: 90vh;
-        margin-left: 12%;
+        height: 70vh;
+        width: 100vw;
+        margin-left: 2%;
     }
 
     .section-about {
